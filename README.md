@@ -20,7 +20,13 @@ Install skills:
 - **SwiftUI** — based on "Thinking in SwiftUI" by objc.io
 - **Core Data** — based on "Core Data" by objc.io + production patterns
 
+## Swift Concurrency (by [Antoine van der Lee](https://github.com/AvdLee))
+
+```
+/plugin marketplace add AvdLee/Swift-Concurrency-Agent-Skill
+/plugin install swift-concurrency@swift-concurrency-agent-skill
+```
+
 ## Submodules
 
 - [Apple Docs MCP](https://github.com/kimsungwhee/apple-docs-mcp) — MCP server for Apple documentation
-- [Swift Concurrency Agent Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill) — Swift concurrency skill by Antoine van der Lee
