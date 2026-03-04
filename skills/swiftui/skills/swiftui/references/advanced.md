@@ -38,7 +38,29 @@ All views **downstream** see the value. Upstream/sibling branches do not.
 - Always mark `@Environment` as `private`
 - Cannot be read in view's initializer — only in `body`
 
-## 2. Custom Environment Keys (3-Step Pattern)
+## 2. Custom Environment Keys
+
+### Modern: @Entry Macro (Xcode 16+ / iOS 18+)
+
+The `@Entry` macro replaces the old 3-step pattern with a single declaration:
+
+```swift
+extension EnvironmentValues {
+    @Entry var badgeColor: Color = .blue
+}
+
+// Optional convenience modifier:
+extension View {
+    func badgeColor(_ color: Color) -> some View {
+        environment(\.badgeColor, color)
+    }
+}
+
+// Reading:
+@Environment(\.badgeColor) private var badgeColor
+```
+
+### Legacy: 3-Step Pattern (pre-Xcode 16 / iOS 17 and earlier)
 
 ```swift
 // Step 1: Define key
@@ -76,10 +98,11 @@ protocol BadgeStyle {
 // 2. Default implementation
 struct DefaultBadgeStyle: BadgeStyle { ... }
 
-// 3. Environment key with existential type
-enum BadgeStyleKey: EnvironmentKey {
-    static var defaultValue: any BadgeStyle = DefaultBadgeStyle()
+// 3. Environment key (modern — @Entry macro, Xcode 16+)
+extension EnvironmentValues {
+    @Entry var badgeStyle: any BadgeStyle = DefaultBadgeStyle()
 }
+// Or legacy: enum BadgeStyleKey: EnvironmentKey { ... }
 
 // 4. Static member for dot syntax
 extension BadgeStyle where Self == FancyBadgeStyle {

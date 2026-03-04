@@ -194,21 +194,20 @@ extension View {
 }
 ```
 
-### Custom Environment Key (3-Step Pattern)
+### Custom Environment Key — @Entry Macro (Xcode 16+ / iOS 18+)
 ```swift
-// 1. Define key
-enum AccentKey: EnvironmentKey { static var defaultValue: Color = .blue }
-// 2. Extend EnvironmentValues
+// Single step replaces the old 3-step EnvironmentKey pattern:
 extension EnvironmentValues {
-    var accent: Color {
-        get { self[AccentKey.self] }
-        set { self[AccentKey.self] = newValue }
-    }
+    @Entry var accent: Color = .blue
 }
-// 3. Convenience modifier
+
+// Convenience modifier (optional, still manual)
 extension View {
     func accent(_ color: Color) -> some View { environment(\.accent, color) }
 }
+
+// Reading:
+@Environment(\.accent) private var accent
 ```
 
 ### Shake Animation (Custom Animatable)
