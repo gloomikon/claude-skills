@@ -1,0 +1,7 @@
+{
+  "name": "core-data",
+  "description": "Core Data development expert based on 'Core Data' by objc.io and real production patterns. Covers stack setup, managed objects, relationships, fetching, saving, concurrency, migrations, performance, predicates, and CloudKit integration.",
+  "author": {
+    "name": "gloomikon"
+  }
+}
