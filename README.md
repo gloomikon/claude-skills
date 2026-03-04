@@ -33,5 +33,5 @@ Install skills:
 
 MCP server for Apple documentation ([repo](https://github.com/kimsungwhee/apple-docs-mcp)):
 ```bash
-claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
+claude mcp add --scope project apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 ```
