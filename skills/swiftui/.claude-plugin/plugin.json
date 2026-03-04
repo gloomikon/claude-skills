@@ -1,0 +1,7 @@
+{
+  "name": "swiftui",
+  "description": "SwiftUI development expert based on 'Thinking in SwiftUI' by Chris Eidhof & Florian Kugler. Covers view trees, state management, layout system, animations, environment, and advanced patterns.",
+  "author": {
+    "name": "gloomikon"
+  }
+}
