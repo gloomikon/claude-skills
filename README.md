@@ -2,36 +2,22 @@
 
 Custom skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
-## Structure
+## Skills
 
-Each skill is a standalone plugin:
-
-```
-skills/
-├── my-skill/
-│   ├── .claude-plugin/
-│   │   └── plugin.json
-│   └── skills/
-│       └── my-skill/
-│           ├── SKILL.md
-│           ├── references/   (optional)
-│           ├── scripts/      (optional)
-│           └── assets/       (optional)
-```
-
-## Installation
-
-To install a skill, symlink the plugin directory into your Claude plugins folder:
-
+### SwiftUI
 ```bash
-ln -s /path/to/skills/my-skill ~/.claude/plugins/marketplaces/claude-plugins-official/external_plugins/my-skill
+claude skills add github:gloomikon/claude-skills/skills/swiftui
 ```
 
-## Creating a New Skill
+### Core Data
+```bash
+claude skills add github:gloomikon/claude-skills/skills/core-data
+```
 
-1. Create a new directory under `skills/`
-2. Add `.claude-plugin/plugin.json` with plugin metadata
-3. Add `skills/<skill-name>/SKILL.md` with the skill prompt
-4. Symlink to install locally
+## Submodules
 
-See the [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code) for more details on skill authoring.
+### [Apple Docs MCP](https://github.com/kimsungwhee/apple-docs-mcp)
+MCP server for Apple documentation.
+
+### [Swift Concurrency Agent Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill)
+Skill for Swift concurrency by Antoine van der Lee.
