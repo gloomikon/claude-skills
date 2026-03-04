@@ -1,0 +1,6 @@
+[submodule "apple-docs-mcp"]
+	path = apple-docs-mcp
+	url = https://github.com/kimsungwhee/apple-docs-mcp.git
+[submodule "Swift-Concurrency-Agent-Skill"]
+	path = Swift-Concurrency-Agent-Skill
+	url = https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git
