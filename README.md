@@ -13,12 +13,14 @@ Install skills:
 ```
 /plugin install swiftui@gloomikon-claude-skills
 /plugin install core-data@gloomikon-claude-skills
+/plugin install ios-new-project@gloomikon-claude-skills
 ```
 
 ## Skills
 
 - **SwiftUI** — based on "Thinking in SwiftUI" by objc.io
 - **Core Data** — based on "Core Data" by objc.io + production patterns
+- **iOS New Project** — create a new iOS project from KOMA template with pre-configured skills and MCP
 
 ## Swift Concurrency (by [Antoine van der Lee](https://github.com/AvdLee))
 

@@ -13,6 +13,11 @@
       "name": "core-data",
       "source": "./skills/core-data",
       "description": "Core Data development expert based on objc.io book and production patterns"
+    },
+    {
+      "name": "ios-new-project",
+      "source": "./skills/ios-new-project",
+      "description": "Create a new iOS project from KOMA template with pre-configured Claude Code skills and MCP servers"
     }
   ]
 }

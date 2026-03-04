@@ -1,0 +1,8 @@
+{
+  "name": "ios-new-project",
+  "description": "Create a new iOS project from KOMA template with pre-configured Claude Code skills and MCP servers",
+  "version": "1.0.0",
+  "author": {
+    "name": "gloomikon"
+  }
+}
