@@ -169,26 +169,7 @@ Always wrap primitive access in `willAccessValue/didAccessValue` (getter) or
 `willChangeValue/didChangeValue` (setter). For complex types, use JSONEncoder/JSONDecoder
 to store as Binary Data.
 
-### 7. Set Up Default Values in awakeFromInsert
-
-```swift
-override func awakeFromInsert() {
-    super.awakeFromInsert()
-    identifier = UUID()
-    dateCreated = Date()
-}
-```
-
-Called once in an object's lifetime. Use primitive properties here to avoid change tracking.
-
-**CloudKit workaround:** CloudKit requires all attributes to be either optional or have a default
-value. UUID has no meaningful default, so it must be declared optional in the model — but that
-pollutes the API with unnecessary optionals. The workaround: mark UUID optional in the
-`.xcdatamodeld`, but declare it as non-optional `@NSManaged` in code and assign in
-`awakeFromInsert()`. The property is never actually nil in practice because `awakeFromInsert`
-runs before any access.
-
-### 8. CloudKit Integration — NSPersistentCloudKitContainer
+### 7. CloudKit Integration — NSPersistentCloudKitContainer
 
 ```swift
 let container = NSPersistentCloudKitContainer(name: "MyApp")
@@ -204,7 +185,7 @@ container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
 - `automaticallyMergesChangesFromParent = true` for CloudKit sync changes
 - `NSMergeByPropertyObjectTrumpMergePolicy` — per-property merge, in-memory wins
 
-### 9. Concurrency: Two Golden Rules
+### 8. Concurrency: Two Golden Rules
 
 1. **Always use `perform`/`performAndWait`** before accessing a context or its objects
 2. **Never pass managed objects between contexts** — pass `objectID` instead
@@ -217,7 +198,7 @@ mainContext.perform {
 }
 ```
 
-### 10. Debug with Launch Arguments
+### 9. Debug with Launch Arguments
 
 | Argument | Purpose |
 |----------|---------|
