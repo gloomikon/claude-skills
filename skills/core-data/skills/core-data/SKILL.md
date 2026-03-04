@@ -174,12 +174,19 @@ to store as Binary Data.
 ```swift
 override func awakeFromInsert() {
     super.awakeFromInsert()
-    identifier = UUID()           // Use primitive if available
+    identifier = UUID()
     dateCreated = Date()
 }
 ```
 
 Called once in an object's lifetime. Use primitive properties here to avoid change tracking.
+
+**CloudKit workaround:** CloudKit requires all attributes to be either optional or have a default
+value. UUID has no meaningful default, so it must be declared optional in the model — but that
+pollutes the API with unnecessary optionals. The workaround: mark UUID optional in the
+`.xcdatamodeld`, but declare it as non-optional `@NSManaged` in code and assign in
+`awakeFromInsert()`. The property is never actually nil in practice because `awakeFromInsert`
+runs before any access.
 
 ### 8. CloudKit Integration — NSPersistentCloudKitContainer
 

@@ -79,6 +79,30 @@ private lazy var container: NSPersistentCloudKitContainer = {
 - `NSMergeByPropertyObjectTrumpMergePolicy` — in-memory wins per-property on conflicts
 - All entities must have `syncable="YES"` in the model
 
+### CloudKit Attribute Constraints
+
+CloudKit requires all attributes to be **either optional or have a default value**. This creates
+a problem for types like UUID that have no meaningful default.
+
+**Workaround:** Mark the attribute optional in the `.xcdatamodeld`, but declare it as non-optional
+`@NSManaged` in code. Assign the value in `awakeFromInsert()`:
+
+```swift
+@objc(CD_Item)
+final class CD_Item: NSManagedObject {
+    // Non-optional in code, optional in the model
+    @NSManaged private(set) var identifier: UUID
+
+    override func awakeFromInsert() {
+        super.awakeFromInsert()
+        identifier = UUID()  // Always set before any access
+    }
+}
+```
+
+`awakeFromInsert()` runs before the object is ever accessed, so the property is never nil
+in practice. This avoids polluting the API with unnecessary optionals.
+
 ## 4. Managed Object Subclasses
 
 Always write by hand. Never use Xcode codegen.
