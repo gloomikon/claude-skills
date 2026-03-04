@@ -27,6 +27,9 @@ Install skills:
 /plugin install swift-concurrency@swift-concurrency-agent-skill
 ```
 
-## Submodules
+## Apple Docs MCP
 
-- [Apple Docs MCP](https://github.com/kimsungwhee/apple-docs-mcp) — MCP server for Apple documentation
+MCP server for Apple documentation ([repo](https://github.com/kimsungwhee/apple-docs-mcp)):
+```bash
+claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
+```
