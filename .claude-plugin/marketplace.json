@@ -1,0 +1,18 @@
+{
+  "name": "gloomikon-claude-skills",
+  "owner": {
+    "name": "gloomikon"
+  },
+  "plugins": [
+    {
+      "name": "swiftui",
+      "source": "./skills/swiftui",
+      "description": "SwiftUI development expert based on 'Thinking in SwiftUI' book"
+    },
+    {
+      "name": "core-data",
+      "source": "./skills/core-data",
+      "description": "Core Data development expert based on objc.io book and production patterns"
+    }
+  ]
+}
