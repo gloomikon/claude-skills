@@ -18,6 +18,8 @@ scripts, hooks, settings) and check its license. Install it only after that.
 | `remotion-best-practices` | github.com/remotion-dev/skills, `skills/remotion-best-practices` (router; already contains all 12 sub-skills, so do not add them separately) | Official Remotion rules: markup, rendering, captions, audio, maps, Studio | video made with Remotion |
 | `humanizer` | github.com/blader/humanizer (MIT) | Removes signs of AI writing from prose | scripts, copy |
 | `taste-skill`, `redesign-skill` | github.com/Leonxlnx/taste-skill (MIT), `skills/taste-skill`, `skills/redesign-skill` | Anti-generic web design; redesign audits and improves existing UI without a rewrite. **Web only** (CSS/Tailwind/React) | web apps |
+| `emil-design-eng`, `animate`, `review-animations`, `find-animation-opportunities`, `pick-ui-library` | github.com/emilkowalski/skills (MIT) | Emil Kowalski's design engineering: UI polish, when and how to animate, animation review, finding missing motion, choosing a UI library. **Web** (CSS/React) | web apps |
+| `break-ui` | same | Breaks UI with worst-case data: long names, empty states, huge counts, long translations. Framework-agnostic | web and iOS apps |
 | `replica-recon`, `replica-entrepreneur` | github.com/Jakeschincariol/replica-skill (MIT) | Reverse-engineer a competitor app; mine its public reviews for what users hate and miss | projects hub: new product research |
 | `i-have-adhd` | github.com/ayghri/i-have-adhd (MIT) | Answers shaped for an ADHD reader: next action first, numbered steps, state restated every turn, concrete time estimates, wins made visible. Always on via a SessionStart hook; off with "stop adhd mode" | global |
 | `caveman` | local | Terse answer style; a SessionStart hook loads it | global |

@@ -176,6 +176,67 @@
         "web apps .claude/agents"
       ],
       "local_changes": "source note added after frontmatter"
+    },
+    {
+      "name": "emil-design-eng",
+      "kind": "skill",
+      "repo": "emilkowalski/skills",
+      "path": "skills/emil-design-eng",
+      "commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "installed_in": [
+        "web apps"
+      ]
+    },
+    {
+      "name": "animate",
+      "kind": "skill",
+      "repo": "emilkowalski/skills",
+      "path": "skills/animate",
+      "commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "installed_in": [
+        "web apps"
+      ]
+    },
+    {
+      "name": "review-animations",
+      "kind": "skill",
+      "repo": "emilkowalski/skills",
+      "path": "skills/review-animations",
+      "commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "installed_in": [
+        "web apps"
+      ]
+    },
+    {
+      "name": "find-animation-opportunities",
+      "kind": "skill",
+      "repo": "emilkowalski/skills",
+      "path": "skills/find-animation-opportunities",
+      "commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "installed_in": [
+        "web apps"
+      ]
+    },
+    {
+      "name": "pick-ui-library",
+      "kind": "skill",
+      "repo": "emilkowalski/skills",
+      "path": "skills/pick-ui-library",
+      "commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "installed_in": [
+        "web apps"
+      ]
+    },
+    {
+      "name": "break-ui",
+      "kind": "skill",
+      "repo": "emilkowalski/skills",
+      "path": "skills/break-ui",
+      "commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "installed_in": [
+        "web apps",
+        "iOS apps"
+      ]
     }
   ]
 }
