@@ -62,6 +62,12 @@ To update: read the diff, then copy the new version to every place in `installed
 | `hyperframes` | github.com/heygen-com/hyperframes (Apache-2.0) | HTML-to-video renderer; Remotion is already in use |
 | `postiz` | github.com/gitroomhq/postiz-app (AGPL, self-host) | post scheduler for many networks; needs a paid server |
 | VoiceStudio | github.com/debpalash/VoiceStudio (AGPL) | local voice cloning and dubbing; each model has its own license |
+| `web-quality-skills` | github.com/addyosmani/web-quality-skills (MIT) | Lighthouse / Core Web Vitals; for a web performance pass |
+| `archify` | github.com/tt-a1i/archify (MIT) | interactive HTML architecture diagrams; 300+ scripts, and `graphify` already maps code |
+| `stop-slop` | github.com/hardikpandya/stop-slop | `humanizer` already covers it |
+| `frontend-slides` | github.com/zarazhangrui/frontend-slides | slides as code; not needed now |
+| `awesome-design-md`, `design.md` | github.com/VoltAgent/awesome-design-md, github.com/google-labs-code/design.md | DESIGN.md format; `ios-delight` writes `docs/DESIGN.md` itself |
+| Magic UI, Smooth UI, Unlumen UI, Retro UI | web component libraries | for the web app, together with `taste-skill` |
 | `diagram-design` | github.com/cathrynlavery/diagram-design | editorial diagrams (HTML) |
 | `replica-*` (other 9) | github.com/Jakeschincariol/replica-skill | rebuild a clone on Next.js, Postgres, Stripe and Resend |
 
@@ -74,4 +80,15 @@ To update: read the diff, then copy the new version to every place in `installed
 - **skillry.dev** marketplace: browser-authorized CLI, skills can change server-side.
 - Reels promising "$5000 services" with pipecat, cline, anything-llm, crewAI, browser-use, InfiniteTalk:
   either already covered by Claude Code or off-topic.
+- **mattpocock/skills** (278k★) and **addyosmani/agent-skills** (102k★, has hooks): planning, TDD, debugging,
+  review, specs. `superpowers` and our reviewer agents already cover this.
+- **everything-claude-code** (affaan-m, 274k★): the full install is 5,700+ files, 1,000+ skills and auto hooks.
+  Only 5 agents were taken (see Agents).
+- **swift-ios-skills** (dpearson2699): non-standard license; overlaps with `ios-delight`.
+- **ios-ui-craft** (vabole/apple-skills): the author moved it to `disabled-skills`.
+- **open-design / swiftui-design** (nexu-io): `ios-delight` covers it.
+- **gpt-tasteskill**, **imagegen-frontend-mobile/web**, **brandkit**, **image-to-code** (in taste-skill): need image generation (Codex).
+- **Emil Kowalski** `apple-design`, `mobile-native`, `animate-expo`, `ask-sonner`, `prototype`: web or React Native only.
+- **Login security reel** (5 vibe-coded login holes): turned into a login audit TODO in the web app.
+- **"5 content formats for user acquisition" reel**: applies only to the YouTube channel (Shorts). The other projects are personal or monetized differently.
 - GetLayers.ai: a paid prompt library; Claude writes such pages directly.
