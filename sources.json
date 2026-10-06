@@ -237,6 +237,47 @@
         "web apps",
         "iOS apps"
       ]
+    },
+    {
+      "name": "ponytail",
+      "kind": "skill",
+      "repo": "DietrichGebert/ponytail",
+      "path": "skills/ponytail/SKILL.md",
+      "commit": "552acd5efd0aeae2583a12efe39373d2f076f25e",
+      "installed_in": [
+        "global (owner dotfiles)"
+      ],
+      "local_changes": "SKILL.md only; the plugin's Node hooks are not installed"
+    },
+    {
+      "name": "teach",
+      "kind": "skill",
+      "repo": "mattpocock/skills",
+      "path": "skills/productivity/teach",
+      "commit": "6fd947921b935b7e1e69293a200400f0fdd5c15f",
+      "installed_in": [
+        "global (owner dotfiles)"
+      ]
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "kind": "skill",
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/improve-codebase-architecture",
+      "commit": "6fd947921b935b7e1e69293a200400f0fdd5c15f",
+      "installed_in": [
+        "large codebases (Sprava clients)"
+      ]
+    },
+    {
+      "name": "codebase-design",
+      "kind": "skill",
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/codebase-design",
+      "commit": "6fd947921b935b7e1e69293a200400f0fdd5c15f",
+      "installed_in": [
+        "large codebases (needed by improve-codebase-architecture)"
+      ]
     }
   ]
 }

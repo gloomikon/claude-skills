@@ -1,6 +1,6 @@
 # Skills catalog
 
-Skills I have reviewed. **Rule:** only `caveman` and `i-have-adhd` are global (`~/.claude/skills/`). Everything else is
+Skills I have reviewed. **Rule:** only `caveman`, `i-have-adhd`, `ponytail` and `teach` are global (`~/.claude/skills/`). Everything else is
 copied into each project's `.claude/skills/<name>/` (or enabled per project as a plugin), so a project
 gets only what fits its stack. Before installing anything new: read the whole skill (SKILL.md,
 scripts, hooks, settings) and check its license. Install it only after that.
@@ -21,6 +21,9 @@ scripts, hooks, settings) and check its license. Install it only after that.
 | `emil-design-eng`, `animate`, `review-animations`, `find-animation-opportunities`, `pick-ui-library` | github.com/emilkowalski/skills (MIT) | Emil Kowalski's design engineering: UI polish, when and how to animate, animation review, finding missing motion, choosing a UI library. **Web** (CSS/React) | web apps |
 | `break-ui` | same | Breaks UI with worst-case data: long names, empty states, huge counts, long translations. Framework-agnostic | web and iOS apps |
 | `replica-recon`, `replica-entrepreneur` | github.com/Jakeschincariol/replica-skill (MIT) | Reverse-engineer a competitor app; mine its public reviews for what users hate and miss | projects hub: new product research |
+| `ponytail` | github.com/DietrichGebert/ponytail (MIT), `skills/ponytail/SKILL.md` only, without the Node hooks | Lazy-senior coding: YAGNI, reuse, stdlib and native features first, shortest working diff, root-cause fixes | global |
+| `teach` | github.com/mattpocock/skills (MIT), `skills/productivity/teach` | Multi-session teaching of any topic: mission, HTML lessons, spaced retrieval, learning records. Manual `/teach`; use it in a dedicated folder per topic | global |
+| `improve-codebase-architecture` + `codebase-design` | github.com/mattpocock/skills (MIT) | Manual `/improve-codebase-architecture`: finds shallow modules and proposes deepening refactors as an HTML report with before/after diagrams | large codebases |
 | `i-have-adhd` | github.com/ayghri/i-have-adhd (MIT) | Answers shaped for an ADHD reader: next action first, numbered steps, state restated every turn, concrete time estimates, wins made visible. Always on via a SessionStart hook; off with "stop adhd mode" | global |
 | `caveman` | local | Terse answer style; a SessionStart hook loads it | global |
 
@@ -80,7 +83,7 @@ To update: read the diff, then copy the new version to every place in `installed
 - **skillry.dev** marketplace: browser-authorized CLI, skills can change server-side.
 - Reels promising "$5000 services" with pipecat, cline, anything-llm, crewAI, browser-use, InfiniteTalk:
   either already covered by Claude Code or off-topic.
-- **mattpocock/skills** (278k★) and **addyosmani/agent-skills** (102k★, has hooks): planning, TDD, debugging,
+- **mattpocock/skills** (278k★): only `teach`, `improve-codebase-architecture` and `codebase-design` were taken. `git-guardrails-claude-code` was rejected because it blocks every `git push`, and the auto-mode classifier already stops destructive git. **addyosmani/agent-skills** (102k★, has hooks): planning, TDD, debugging,
   review, specs. `superpowers` and our reviewer agents already cover this.
 - **everything-claude-code** (affaan-m, 274k★): the full install is 5,700+ files, 1,000+ skills and auto hooks.
   Only 5 agents were taken (see Agents).
