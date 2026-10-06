@@ -32,7 +32,7 @@ scripts, hooks, settings) and check its license. Install it only after that.
 | `typescript-reviewer` | same | TypeScript review | web apps |
 | `silent-failure-hunter` | same | Finds swallowed errors, empty catches, fallbacks that hide failures | web apps, backends |
 
-Own reviewers, library in `agents/`. Copy them into a project's `.claude/agents/` by stack. Nothing is global.
+Own reviewers: the library is in the owner's private dotfiles (`~/.dotfiles/claude/agents/`). Copy them into a project's `.claude/agents/` by stack. Nothing is global.
 
 | Agent | Put into |
 |---|---|

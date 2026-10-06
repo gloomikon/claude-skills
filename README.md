@@ -38,7 +38,7 @@ MCP server for Apple documentation ([repo](https://github.com/kimsungwhee/apple-
 claude mcp add --scope project apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 ```
 
-## Catalog and new machine
+## Catalog and updates
 
 - [`CATALOG.md`](CATALOG.md) — every skill I have reviewed: what it does, the source, where to use it, and what I rejected.
-- [`NEW-MACHINE.md`](NEW-MACHINE.md) — setup on a new laptop; give it to Claude.
+- [`sources.json`](sources.json) + `python3 tools/check-updates.py` — pinned versions of third-party skills and agents, and an upstream change check.
