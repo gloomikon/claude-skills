@@ -69,7 +69,7 @@
       "commit": "839872f9d1cd634fed642b4589ce7226199cc15f",
       "installed_in": [
         "global ~/.claude/skills",
-        "setup/global/skills"
+        "owner dotfiles (global skills)"
       ]
     },
     {
