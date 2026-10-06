@@ -70,6 +70,7 @@ To update: read the diff, then copy the new version to every place in `installed
 | `stop-slop` | github.com/hardikpandya/stop-slop | `humanizer` already covers it |
 | `frontend-slides` | github.com/zarazhangrui/frontend-slides | slides as code; not needed now |
 | `awesome-design-md`, `design.md` | github.com/VoltAgent/awesome-design-md, github.com/google-labs-code/design.md | DESIGN.md format; `ios-delight` writes `docs/DESIGN.md` itself |
+| Blobatar | github.com/Alain00/blobatar (MIT, React + SVG); Swift port `jasonkneen/blobatarKit` (very early) | deterministic avatars from a name or ID, no image storage. Not a skill. For a multi-client app, serve the SVG from one backend route so every client gets the same avatar |
 | Magic UI, Smooth UI, Unlumen UI, Retro UI | web component libraries | for the web app, together with `taste-skill` |
 | `diagram-design` | github.com/cathrynlavery/diagram-design | editorial diagrams (HTML) |
 | `replica-*` (other 9) | github.com/Jakeschincariol/replica-skill | rebuild a clone on Next.js, Postgres, Stripe and Resend |
