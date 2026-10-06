@@ -1,6 +1,6 @@
 # Skills catalog
 
-Skills I have reviewed. **Rule:** only `caveman` is global (`~/.claude/skills/`). Everything else is
+Skills I have reviewed. **Rule:** only `caveman` and `i-have-adhd` are global (`~/.claude/skills/`). Everything else is
 copied into each project's `.claude/skills/<name>/` (or enabled per project as a plugin), so a project
 gets only what fits its stack. Before installing anything new: read the whole skill (SKILL.md,
 scripts, hooks, settings) and check its license. Install it only after that.
@@ -19,6 +19,7 @@ scripts, hooks, settings) and check its license. Install it only after that.
 | `humanizer` | github.com/blader/humanizer (MIT) | Removes signs of AI writing from prose | scripts, copy |
 | `taste-skill`, `redesign-skill` | github.com/Leonxlnx/taste-skill (MIT), `skills/taste-skill`, `skills/redesign-skill` | Anti-generic web design; redesign audits and improves existing UI without a rewrite. **Web only** (CSS/Tailwind/React) | web apps |
 | `replica-recon`, `replica-entrepreneur` | github.com/Jakeschincariol/replica-skill (MIT) | Reverse-engineer a competitor app; mine its public reviews for what users hate and miss | projects hub: new product research |
+| `i-have-adhd` | github.com/ayghri/i-have-adhd (MIT) | Answers shaped for an ADHD reader: next action first, numbered steps, state restated every turn, concrete time estimates, wins made visible. Always on via a SessionStart hook; off with "stop adhd mode" | global |
 | `caveman` | local | Terse answer style; a SessionStart hook loads it | global |
 
 ## Worth a look later
