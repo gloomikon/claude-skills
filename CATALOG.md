@@ -32,7 +32,16 @@ scripts, hooks, settings) and check its license. Install it only after that.
 | `typescript-reviewer` | same | TypeScript review | web apps |
 | `silent-failure-hunter` | same | Finds swallowed errors, empty catches, fallbacks that hide failures | web apps, backends |
 
-The global reviewers (`verifier`, `code-critic` and others) are in `setup/global/agents/`.
+Own reviewers, library in `agents/`. Copy them into a project's `.claude/agents/` by stack. Nothing is global.
+
+| Agent | Put into |
+|---|---|
+| `verifier`, `code-critic`, `plan-challenger` | every project with code |
+| `ux-critic`, `perf-auditor` | apps with a UI |
+| `db-auditor` | projects with a database or local store |
+| `security-auditor` | auth, payments, OAuth, webhooks, secrets, user data |
+| `parity-checker` | products with several clients (iOS, Android, web, contracts) |
+| `release-gatekeeper` | apps that ship to users (App Store, Play, TestFlight, production web) |
 Not taken from everything-claude-code: the full install (5,700+ files, 1,000+ skills, auto-running hooks). It is too heavy for every session's context.
 
 ## Updates
