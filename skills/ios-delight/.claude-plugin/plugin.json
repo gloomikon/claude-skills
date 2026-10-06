@@ -1,0 +1,5 @@
+{
+  "name": "ios-delight",
+  "description": "Makes SwiftUI apps look and feel alive: design direction first, then custom components, motion, haptics, sound and celebrations. Combines ios-taste, swiftui-microinteractions and the Apple design skills pack (all MIT).",
+  "author": { "name": "gloomikon" }
+}

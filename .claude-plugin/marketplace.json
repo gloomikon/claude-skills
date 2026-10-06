@@ -18,6 +18,11 @@
       "name": "ios-new-project",
       "source": "./skills/ios-new-project",
       "description": "Create a new iOS project from KOMA template with pre-configured Claude Code skills and MCP servers"
+    },
+    {
+      "name": "ios-delight",
+      "source": "./skills/ios-delight",
+      "description": "Alive SwiftUI apps: design direction, custom components, motion, haptics, celebrations"
     }
   ]
 }
