@@ -22,6 +22,25 @@ scripts, hooks, settings) and check its license. Install it only after that.
 | `i-have-adhd` | github.com/ayghri/i-have-adhd (MIT) | Answers shaped for an ADHD reader: next action first, numbered steps, state restated every turn, concrete time estimates, wins made visible. Always on via a SessionStart hook; off with "stop adhd mode" | global |
 | `caveman` | local | Terse answer style; a SessionStart hook loads it | global |
 
+## Agents (per project, `.claude/agents/`)
+
+| Agent | Source | What it does | Use for |
+|---|---|---|---|
+| `swift-reviewer` | github.com/affaan-m/everything-claude-code (MIT), `agents/` | Swift review: safety (force unwrap, `try!`), concurrency, memory, protocol design | iOS apps |
+| `swift-build-resolver` | same | Fixes Swift/Xcode/SPM build errors with minimal changes | iOS apps |
+| `kotlin-reviewer` | same | Kotlin review | Android apps |
+| `typescript-reviewer` | same | TypeScript review | web apps |
+| `silent-failure-hunter` | same | Finds swallowed errors, empty catches, fallbacks that hide failures | web apps, backends |
+
+The global reviewers (`verifier`, `code-critic` and others) are in `setup/global/agents/`.
+Not taken from everything-claude-code: the full install (5,700+ files, 1,000+ skills, auto-running hooks). It is too heavy for every session's context.
+
+## Updates
+
+`sources.json` pins every third-party skill and agent to the commit that was reviewed.
+Run `python3 tools/check-updates.py` to see which ones changed upstream; it prints a compare link.
+To update: read the diff, then copy the new version to every place in `installed_in` and bump `commit`. Never update blindly.
+
 ## Worth a look later
 
 | Skill | Source | Why not yet |

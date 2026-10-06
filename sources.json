@@ -1,0 +1,22 @@
+{
+  "_about": "Third-party skills and agents copied into projects. `commit` is the version that was reviewed and installed. Run `python3 tools/check-updates.py` to see which ones changed upstream. Never update blindly: re-read the diff, then copy the new version into every place listed in `installed_in`.",
+  "items": [
+    { "name": "remotion-best-practices", "kind": "skill", "repo": "remotion-dev/skills", "path": "skills/remotion-best-practices", "commit": "473352613039e718e46655a26df224851e84c4aa", "installed_in": ["video projects (Remotion)"] },
+    { "name": "humanizer", "kind": "skill", "repo": "blader/humanizer", "path": "SKILL.md", "commit": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8", "installed_in": ["video projects (scripts)"] },
+    { "name": "taste-skill", "kind": "skill", "repo": "Leonxlnx/taste-skill", "path": "skills/taste-skill", "commit": "e3c92037548e3e49bea8e6b906c99a8549654e71", "installed_in": ["web apps"] },
+    { "name": "redesign-skill", "kind": "skill", "repo": "Leonxlnx/taste-skill", "path": "skills/redesign-skill", "commit": "e3c92037548e3e49bea8e6b906c99a8549654e71", "installed_in": ["web apps"] },
+    { "name": "replica-recon", "kind": "skill", "repo": "Jakeschincariol/replica-skill", "path": "replica-recon", "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51", "installed_in": ["projects hub"] },
+    { "name": "replica-entrepreneur", "kind": "skill", "repo": "Jakeschincariol/replica-skill", "path": "replica-entrepreneur", "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51", "installed_in": ["projects hub"] },
+    { "name": "i-have-adhd", "kind": "skill", "repo": "ayghri/i-have-adhd", "path": "skills/i-have-adhd/SKILL.md", "commit": "839872f9d1cd634fed642b4589ce7226199cc15f", "installed_in": ["global ~/.claude/skills", "setup/global/skills"] },
+    { "name": "ios-simulator-skill", "kind": "skill", "repo": "conorluddy/ios-simulator-skill", "path": "", "commit": "afcf21f5f8f69978f350cae942ac23cadedc1b65", "installed_in": ["iOS apps"] },
+    { "name": "wwdc", "kind": "skill", "repo": "superwall/skills", "path": "skills/wwdc", "commit": null, "installed_in": ["iOS apps"] },
+    { "name": "ios-delight/taste", "kind": "skill-part", "repo": "pproenca/dot-skills", "path": "skills/.curated/ios-taste", "commit": "cf93c57cac89d6fc3e4194686000411567f5caf3", "installed_in": ["skills/ios-delight in this repo, then iOS apps"] },
+    { "name": "ios-delight/motion", "kind": "skill-part", "repo": "iAmVishal16/swiftui-microinteractions", "path": "SKILL.md", "commit": "1b033db8d3bb8db492f82e1c614b598a4e86c072", "installed_in": ["skills/ios-delight in this repo, then iOS apps"] },
+    { "name": "ios-delight/apple-design", "kind": "skill-part", "repo": "rshankras/claude-code-apple-skills", "path": "skills/design", "commit": "9ffb83138209057875698dd11c1720c657c47a92", "installed_in": ["skills/ios-delight in this repo, then iOS apps"] },
+    { "name": "swift-reviewer", "kind": "agent", "repo": "affaan-m/everything-claude-code", "path": "agents/swift-reviewer.md", "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775", "installed_in": ["iOS apps .claude/agents"], "local_changes": "description no longer says MUST BE USED; source note added after frontmatter" },
+    { "name": "swift-build-resolver", "kind": "agent", "repo": "affaan-m/everything-claude-code", "path": "agents/swift-build-resolver.md", "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775", "installed_in": ["iOS apps .claude/agents"], "local_changes": "source note added after frontmatter" },
+    { "name": "kotlin-reviewer", "kind": "agent", "repo": "affaan-m/everything-claude-code", "path": "agents/kotlin-reviewer.md", "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775", "installed_in": ["Android apps .claude/agents"], "local_changes": "source note added after frontmatter" },
+    { "name": "typescript-reviewer", "kind": "agent", "repo": "affaan-m/everything-claude-code", "path": "agents/typescript-reviewer.md", "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775", "installed_in": ["web apps .claude/agents"], "local_changes": "source note added after frontmatter" },
+    { "name": "silent-failure-hunter", "kind": "agent", "repo": "affaan-m/everything-claude-code", "path": "agents/silent-failure-hunter.md", "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775", "installed_in": ["web apps .claude/agents"], "local_changes": "source note added after frontmatter" }
+  ]
+}
